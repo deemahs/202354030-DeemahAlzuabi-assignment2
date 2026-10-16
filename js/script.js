@@ -15,6 +15,17 @@ const year =
     document.getElementById("year");
 
 
+// Select project filtering elements
+
+const filterButtons =
+    document.querySelectorAll(".filter-btn");
+
+const projectCards =
+    document.querySelectorAll(".project-card");
+
+const filterState =
+    document.getElementById("filterStatus");
+
 // ========================================
 // Dark / Light Mode
 // ========================================
