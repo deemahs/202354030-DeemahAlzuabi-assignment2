@@ -956,3 +956,65 @@ body.dark-mode .footer {
     }
 
 }
+
+/* =========================================
+   PROJECT FILTER BUTTONS
+========================================= */
+
+.project-filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 12px;
+    margin: 0 auto 14px;
+}
+
+.filter-btn {
+    padding: 9px 20px;
+
+    border: 2px solid var(--pink);
+    border-radius: 30px;
+
+    background-color: var(--white);
+    color: var(--black);
+
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s,
+        color 0.2s,
+        transform 0.2s;
+}
+
+.filter-btn:hover {
+    transform: translateY(-2px);
+}
+
+.filter-btn.active {
+    background-color: var(--pink);
+    color: #ffffff;
+}
+
+.filter-btn:focus-visible,
+.btn:focus-visible,
+.theme-button:focus-visible {
+    outline: 3px solid var(--pink);
+    outline-offset: 3px;
+}
+
+.filter-status {
+    margin-bottom: 24px;
+    min-height: 1.7em;
+
+    color: var(--gray);
+    text-align: center;
+}
+
+.project-card[hidden] {
+    display: none !important;
+}
