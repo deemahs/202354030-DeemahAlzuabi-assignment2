@@ -214,7 +214,55 @@
 
                 </div>
 
+                <!-- Project filtering buttons -->
 
+                <div class="project-filters"
+                     role="group"
+                     aria-label="Filter projects by technology">
+
+                    <button
+                        class="filter-btn active"
+                        type="button"
+                        data-filter="all"
+                        aria-pressed="true">
+                        All
+                    </button>
+
+                    <button
+                        class="filter-btn"
+                        type="button"
+                        data-filter="javascript"
+                        aria-pressed="false">
+                        JavaScript
+                    </button>
+
+                    <button
+                        class="filter-btn"
+                        type="button"
+                        data-filter="python"
+                        aria-pressed="false">
+                        Python
+                    </button>
+
+                    <button
+                        class="filter-btn"
+                        type="button"
+                        data-filter="figma"
+                        aria-pressed="false">
+                        Figma
+                    </button>
+
+                    
+                <!-- Filtering feedback -->
+                </div>
+
+                   <p
+                    id="filterStatus"
+                    class="filter-status"
+                    role="status"
+                    aria-live="polite">
+                    Showing all 2 projects.
+                </p>
                 <div class="projects-grid">
 
 
