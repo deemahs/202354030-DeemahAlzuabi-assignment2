@@ -30,18 +30,53 @@ const filterState =
 // Dark / Light Mode
 // ========================================
 
+
+// Apply theme and update accessibility
+
+function applyTheme(isDark) {
+
+    document.body.classList.toggle("dark-mode", isDark);
+
+    themeButton.textContent =
+        isDark ? "☀️" : "🌙";
+
+    themeButton.setAttribute(
+        "aria-label",
+        isDark ? "Switch to light mode" : "Switch to dark mode"
+    );
+
+    themeButton.setAttribute("aria-pressed", String(isDark));
+}
+
+
+// Restore saved theme from localStorage
+
+try {
+    const savedTheme = localStorage.getItem("portfolioTheme");
+
+    applyTheme(savedTheme === "dark");
+
+} catch (error) {
+    applyTheme(false);
+    console.warn("Could not load theme preference:", error);
+}
+
+// Save selected theme
+
 themeButton.addEventListener("click", function () {
 
-    document.body.classList.toggle("dark-mode");
+     const isDark =
+        !document.body.classList.contains(("dark-mode");
+        applyTheme(isDark);
 
-    if (document.body.classList.contains("dark-mode")) {
+     try {
+        localStorage.setItem(
+            "portfolioTheme",
+            isDark ? "dark" : "light"
+        );
 
-        themeButton.textContent = "☀️";
-
-    } else {
-
-        themeButton.textContent = "🌙";
-
+    } catch (error) {
+        console.warn("Could not save theme preference:", error);
     }
 
 });
