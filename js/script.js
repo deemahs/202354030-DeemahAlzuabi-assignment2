@@ -66,7 +66,7 @@ try {
 themeButton.addEventListener("click", function () {
 
      const isDark =
-        !document.body.classList.contains(("dark-mode");
+        !document.body.classList.contains("dark-mode");
         applyTheme(isDark);
 
      try {
@@ -162,17 +162,82 @@ contactForm.addEventListener("submit", function (event) {
     // Prevent the form from actually submitting
     event.preventDefault();
 
+       const nameFiled =
+        document.getElementById("name");
 
+    const emailFiled =
+        document.getElementById("email");
+
+    const messageFiled =
+        document.getElementById("message");
+
+        // Clear previous validation errors
+         const fields = [nameFiled, emailFiled, messageFiled];
+
+    fields.forEach(function (field) {
+        field.removeAttribute("aria-invalid");
+    });
+
+    
     const name =
-        document.getElementById("name")
-            .value
-            .trim();
+        nameFiled.value.trim();
 
+    const email =
+        emailFiled.value.trim();
+
+    const message =
+        messageFiled.value.trim();
+
+
+    // Validate user input
+    let error = "";
+    let invalidFields = null;
+
+    if (!name) {
+
+        error = "Please enter your name.";
+        invalidFields = nameFiled;
+
+    } else if (!email) {
+
+        error = "Please enter your email.";
+        invalidFields = emailFiled;
+
+    } else if (
+        !emailFiled.validity.valid ||
+        !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
+    ) {
+
+        error = "Please enter a valid email address.";
+        invalidFields = emailFiled;
+
+    } else if (!message) {
+
+        error = "Please enter your message.";
+        invalidFields = messageFiled;
+
+    }
+    // Display error feedback
+
+    if (error) {
+
+        invalidFields.setAttribute("aria-invalid", "true");
+
+        formMessage.className = "form-message error";
+        formMessage.textContent = error;
+
+        invalidFields.focus();
+
+        return;
+    }
+    
+    // Display confirmation after validation
+
+    formMessage.className = "form-message success";
 
     formMessage.textContent =
-        "Thank you, " + name +
-        "! Your message has been received.";
-
+        `Thank you, ${name}! Your form is valid. ` +
+        "This portfolio demo does not send messages.";
 
     // Clear form fields
     contactForm.reset();
