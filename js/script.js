@@ -82,6 +82,77 @@ themeButton.addEventListener("click", function () {
 });
 
 
+// Dynamic Project Filtering
+
+// here I filtered projects based on selected technology which i have added in the HTML file
+
+filterButtons.forEach(function (button) {
+
+    button.addEventListener("click", function () {
+
+        const filter = button.dataset.filter;
+
+        let visibleCount = 0;
+
+        filterButtons.forEach(function (item) {
+
+            const selected = item === button;
+
+            item.classList.toggle("active", selected);
+
+            item.setAttribute(
+                "aria-pressed",
+                String(selected)
+            );
+
+        });
+
+        projectCards.forEach(function (card) {
+
+            const technologies =
+                card.dataset.technologies.split(" ");
+
+            const matches =
+                filter === "all" || technologies.includes(filter);
+
+            card.hidden = !matches;
+
+            if (matches) {
+                visibleCount++;
+            }
+
+        });
+
+        if (visibleCount === 0) {
+
+            filterState.textContent =
+                "No projects found for this filter. " +
+                "Try another technology.";
+
+        } else {
+
+            const projectWord =
+                visibleCount === 1 ? "project" : "projects";
+
+            if (filter === "all") {
+
+                filterState.textContent =
+                    `Showing ${visibleCount} ${projectWord}.`;
+
+            } else {
+
+                filterState.textContent =
+                    `Showing ${visibleCount} ${projectWord} ` +
+                    `using ${button.textContent.trim()}.`;
+
+            }
+
+        }
+
+    });
+
+});
+
 // ========================================
 // Contact Form
 // ========================================
