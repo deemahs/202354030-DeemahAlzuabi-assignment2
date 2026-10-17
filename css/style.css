@@ -1018,3 +1018,50 @@ body.dark-mode .footer {
 .project-card[hidden] {
     display: none !important;
 }
+
+/* =========================================
+ PROJECT ANIMATION
+========================================= */
+
+.project-card {
+    animation: card-enter 0.28s ease both;
+}
+
+@keyframes card-enter {
+
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+/* =========================================
+FORM FEEDBACK
+========================================= */
+
+.form-message.error {
+    color: #b42318;
+}
+
+.form-message.success {
+    color: #087f5b;
+}
+
+body.dark-mode .form-message.error {
+    color: #ff9b91;
+}
+
+body.dark-mode .form-message.success {
+    color: #80e2b2;
+}
+
+.form-group input[aria-invalid="true"],
+.form-group textarea[aria-invalid="true"] {
+    border-color: #d92d20;
+}
