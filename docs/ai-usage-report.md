@@ -109,3 +109,32 @@ I also learned how AI can support software development while still requiring the
 ## 4. Responsible Use & Modifications
 
 I used AI as a supporting tool rather than submitting its suggestions without reviewing them. I reviewed the generated HTML, CSS, and JavaScript and made changes based on the assignment requirements and my personal preferences. I kept the original portfolio content, projects, and color palette. I also adjusted the structure of the Projects section, reviewed JavaScript variable names, and improved the contact form validation. I used AI explanations to understand the purpose of the code and the reasons behind the changes. Before submitting the assignment, I will test the interactive features and responsive layout to check that the website works correctly. This process helps ensure that I understand the final solution and use AI responsibly and transparently.
+
+## 5. AI Usage Log
+
+| ID | Tool (model) | Date | Purpose | Files affected | What you changed and how you verified it |
+|---|---|---|---|---|---|
+| C01 | ChatGPT (GPT-6) | Oct 15–17, 2026 | Understand Assignment 2 requirements and plan interactive features. | Project planning | Reviewed the requirements and selected features suitable for my existing portfolio. |
+| A01 | ChatGPT (GPT-6) | Verify exact date | Generate and improve dynamic project filtering. | `index.html`, `js/script.js`, `css/styles.css` | Adjusted the filter button placement, corrected selectors, and updated project technology attributes. |
+| A02 | ChatGPT (GPT-6) | Verify exact date | Improve dark/light mode using localStorage. | `js/script.js` | Used `portfolioTheme` as the storage key, reviewed theme switching logic, and added error handling using `console.warn()`. |
+| A03 | ChatGPT (GPT-6) | Verify exact date | Improve contact form validation and feedback. | `js/script.js`, `css/styles.css` | Corrected variable references, revised validation messages, and added validation for the empty message field. |
+| A04 | ChatGPT (GPT-6) | Verify exact date | Improve CSS styling and accessibility. | `css/styles.css`, `index.html` | Reviewed filter styling and corrected the footer text color in dark mode. |
+| C02 | ChatGPT (GPT-6) | Oct 17, 2026 | Debug project setup and file paths. | Project folder, `css/`, `docs/` | Corrected the CSS filename and renamed the documentation folder. |
+| A05 | ChatGPT (GPT-6) | Verify exact date | Review and update project documentation. | `README.md`, `docs/technical-documentation.md`, `docs/ai-usage-report.md` | Revised descriptions, corrected grammar, and reorganized sections. |
+| C03 | ChatGPT (GPT-6) | Oct 23, 2026 | Understand AI evidence and declaration requirements. | `docs/ai-usage-report.md`, AI Evidence ZIP | Reviewed the requirements and organized the evidence structure. |
+
+
+
+6. AI Usage Declaration
+
+I declare that this report and the attached evidence document all of my AI use in this assignment, with complete and unedited conversations, and that I understand and can explain all the code I submitted. I understand that undeclared AI use or a false declaration will be treated as plagiarism according to KFUPM regulations.
+
+**Name:** Deemah Alzuabi
+
+**Student ID:** 202354030
+
+**Assignment:** Assignment 2 – Interactive Features
+
+**Date:** 23 oct 2026
+
+**Signature:** deemah alzuabi
