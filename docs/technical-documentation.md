@@ -163,15 +163,8 @@ When the button is clicked, JavaScript adds or removes a `dark-mode` class.
 
 CSS uses this class to change the colors of the website.
 
-### Contact Form Interaction
 
-JavaScript listens for a click on the theme button.
-
-When the button is clicked, JavaScript adds or removes the dark-mode class.
-
-CSS uses this class to change the colors of the website.
-
-## Theme Preference Using localStorage
+### Theme Preference Using localStorage
 
 The selected theme is saved using the browser's localStorage.
 
@@ -191,7 +184,7 @@ The selected technology is compared with the technologies stored in each project
 
 The displayed projects and feedback message are updated dynamically.
 
-Contact Form Interaction
+### Contact Form Interaction
 
 JavaScript listens for the contact form submission.
 

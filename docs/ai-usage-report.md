@@ -112,17 +112,17 @@ I used AI as a supporting tool rather than submitting its suggestions without re
 
 ## 5. AI Usage Log
 
+
 | ID | Tool (model) | Date | Purpose | Files affected | What you changed and how you verified it |
 |---|---|---|---|---|---|
-| C01 | ChatGPT (GPT-6) | Oct 15–17, 2026 | Understand Assignment 2 requirements and plan interactive features. | Project planning | Reviewed the requirements and selected features suitable for my existing portfolio. |
-| A01 | ChatGPT (GPT-6) | Verify exact date | Generate and improve dynamic project filtering. | `index.html`, `js/script.js`, `css/styles.css` | Adjusted the filter button placement, corrected selectors, and updated project technology attributes. |
-| A02 | ChatGPT (GPT-6) | Verify exact date | Improve dark/light mode using localStorage. | `js/script.js` | Used `portfolioTheme` as the storage key, reviewed theme switching logic, and added error handling using `console.warn()`. |
-| A03 | ChatGPT (GPT-6) | Verify exact date | Improve contact form validation and feedback. | `js/script.js`, `css/styles.css` | Corrected variable references, revised validation messages, and added validation for the empty message field. |
-| A04 | ChatGPT (GPT-6) | Verify exact date | Improve CSS styling and accessibility. | `css/styles.css`, `index.html` | Reviewed filter styling and corrected the footer text color in dark mode. |
-| C02 | ChatGPT (GPT-6) | Oct 17, 2026 | Debug project setup and file paths. | Project folder, `css/`, `docs/` | Corrected the CSS filename and renamed the documentation folder. |
-| A05 | ChatGPT (GPT-6) | Verify exact date | Review and update project documentation. | `README.md`, `docs/technical-documentation.md`, `docs/ai-usage-report.md` | Revised descriptions, corrected grammar, and reorganized sections. |
-| C03 | ChatGPT (GPT-6) | Oct 23, 2026 | Understand AI evidence and declaration requirements. | `docs/ai-usage-report.md`, AI Evidence ZIP | Reviewed the requirements and organized the evidence structure. |
-
+| C01 | ChatGPT (GPT-6) | Oct 15–17, 2026 | Understand Assignment 2 requirements and plan interactive features. | Project planning | Reviewed the requirements and selected features suitable for my existing portfolio. Compared the selected features with the assignment requirements. |
+| A01 | ChatGPT (GPT-6) | Oct 15–16, 2026 | Generate and improve dynamic project filtering. | `index.html`, `js/script.js`, `css/styles.css` | Adjusted filter button placement, corrected selectors, and updated project technology attributes. Verification: Test that each filter displays the matching projects. |
+| A02 | ChatGPT (GPT-6) | Oct 15–16, 2026 | Improve dark/light mode using localStorage. | `js/script.js` | Used `portfolioTheme` as the storage key, reviewed theme switching logic, and added error handling using `console.warn()`. Verification: Check that the selected theme remains after refreshing the page. |
+| A03 | ChatGPT (GPT-6) | Oct 15–16, 2026 | Improve contact form validation and feedback. | `js/script.js`, `css/styles.css` | Corrected variable references, revised validation messages, and added validation for the empty message field. Verification: Test empty fields, invalid email input, and successful form validation. |
+| A04 | ChatGPT (GPT-6) | Oct 15–16, 2026 | Improve CSS styling and accessibility. | `css/styles.css`, `index.html` | Reviewed filter styling and corrected the footer text color in dark mode. Verification: Check button styling, animations, and footer colors in both themes. |
+| C02 | ChatGPT (GPT-6) | Oct 17, 2026 | Debug project setup and file paths. | Project folder, `css/`, `docs/` | Corrected the CSS filename and renamed the documentation folder. Verified that the CSS file could be loaded and the website displayed its styling. |
+| A05 | ChatGPT (GPT-6) | Oct 17, 2026 | Review and update project documentation. | `README.md`, `docs/technical-documentation.md`, `docs/ai-usage-report.md` | Revised descriptions, corrected grammar, and reorganized sections. Verification: Compare the documentation with the implemented website features and file structure. |
+| C03 | ChatGPT (GPT-6) | Oct 23, 2026 | Understand AI evidence and declaration requirements. | `docs/ai-usage-report.md`, AI Evidence ZIP | Reviewed the requirements and organized the evidence structure. Verification: Check that the evidence includes complete conversations and original AI-generated artifacts. |
 
 
 6. AI Usage Declaration

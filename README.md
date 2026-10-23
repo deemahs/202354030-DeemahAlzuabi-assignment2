@@ -24,7 +24,6 @@ It includes:
 * A short introduction
 * A "Know More About Me" button
 * A "My Projects" button
-* A contact form
 
 The buttons allow users to navigate directly to different sections of the portfolio.
 
@@ -96,11 +95,12 @@ assignment-2/
 ├── README.md
 ├── .gitignore
 ├── css/
-│   └── styles.css
+│   └── style.css
 ├── js/
 │   └── script.js
 ├── assets/
-│   └── images/
+│   └── Badelna.png
+│   └── Flowly.png
 └── docs/
     ├── ai-usage-report.md
     └── technical-documentation.md
@@ -149,8 +149,11 @@ I also used ChatGPT to help organize and update the project documentation like f
 
 I reviewed and customized the suggestions to match my existing portfolio structure and design.
 
-There is more information about AI usage is available in: `ai-usage-report.md`
+More information about AI usage is available in
+`docs/ai-usage-report.md`
 
 ## Technical Documentation
 
-Detailed information about the website structure, interactive features, and implementation is available in `technical-documentation.md` .
+Detailed information about the website structure,
+interactive features, and implementation is available in
+`docs/technical-documentation.md`.
